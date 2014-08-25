@@ -1,0 +1,30 @@
+{namespace webcharts.ui.main}
+
+/**
+  * The body content.
+  * @param navHomeText The text of link home.
+  * @param navGuideText The text of link guide.
+  * @param navFAQText The text of link faq.
+  * @param navDashboardsText The text of link dashboards.
+  * @param copyright The text of copyright.
+  */
+{template .body}
+<header>
+    <a id="logo" href="">WebCharts</a>
+    <nav>
+        <a id="nav-home" class="active">{$navHomeText}</a>
+        <a id="nav-guide">{$navGuideText}</a>
+        <a id="nav-faq">{$navFAQText}</a>
+        <a id="nav-dashboards">{$navDashboardsText}</a>
+    </nav>
+    <hr/>
+</header>
+
+<div id="main-content">
+</div>
+
+<footer>
+    <hr/>
+    <div id="footer-content">{$copyright}</div>
+</footer>
+{/template}
